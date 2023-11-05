@@ -1,0 +1,24 @@
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 400px; /*Ширина дорожки*/
+    background-color: transparent;
+  }
+/* Изменение цвета ползунка */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 40px; /* Ширина ползунка */
+    height: 40px; /* Высота ползунка */
+    background-color: #d1d422; /* Цвет ползунка */
+    border: 1px solid #000; /* Граница ползунка (по желанию) */
+    border-radius: 20%; 
+    cursor: pointer;
+    /* Используем box-shadow для изменения стиля ползунка */
+  box-shadow: 0 0 5px #000000; /* Размытие и цвет */
+  }
+  /* Изменение цвета полоски дорожки */
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #5dd459;
+    /* Изменение высоты и других параметров полоски дорожки */
+    height: 40px;
+    border-radius: 10px; /* Для создания закругленных углов полоски */
+  }
